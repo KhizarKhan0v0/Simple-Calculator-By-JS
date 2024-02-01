@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator By Khizar</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .ac:active{ background-color: red; }
+        .de:active{ color: red; }
+        .eq:active{ color: black; background-color: green;}
+        .op:active{ background-color: rgba(240, 248, 255, 0.226) ; }
+    </style>
+</head>
+<body>
+    <div id="MainScreen">
+        <div id="DisplayScreen">
+            <input type="text" id="InputScreen">
+            <br>
+            
+
+        </div>
+        <div id="ButtonScreen">
+            <button class="btn ac" onclick="InputScreen.value ='' ">AC</button>
+            <button class="btn de" onclick="InputScreen.value =InputScreen.value.toString().slice(0,-1)">DE</button>
+            <button class="btn" onclick="InputScreen.value+='.'">.</button>
+            <button class="btn op" onclick="InputScreen.value+='/'">/</button>
+            
+            <br>
+            <button class="btn" onclick="InputScreen.value+='7'">7</button>
+            <button class="btn" onclick="InputScreen.value+='8'">8</button>
+            <button class="btn" onclick="InputScreen.value+='9'">9</button>
+            <button class="btn op" onclick="InputScreen.value+='*'">x</button>
+            
+            <br>
+            <button class="btn" onclick="InputScreen.value+='4'">4</button>
+            <button class="btn" onclick="InputScreen.value+='5'">5</button>
+            <button class="btn" onclick="InputScreen.value+='6'">6</button>
+            <button class="btn op" onclick="InputScreen.value+='-'">-</button>
+            <br>
+            <button class="btn" onclick="InputScreen.value+='1'">1</button>
+            <button class="btn" onclick="InputScreen.value+='2'">2</button>
+            <button class="btn" onclick="InputScreen.value+='3'">3</button>
+            <button class="btn op" onclick="InputScreen.value+='+'">+</button>
+            <br>
+            <button class="btn" onclick="InputScreen.value+='00'">00</button>
+            <button class="btn" onclick="InputScreen.value+='0'">0</button>
+            <button class="btn eq" onclick="InputScreen.value=eval(InputScreen.value)" style="width: 42%;">=</button>
+            
+
+        </div>
+
+
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+#MainScreen{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(7, 7, 41);
+    /* display: flex; */
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    /* justify-content: center;
+    align-items: center; */
+    /* padding: 10px; */
+
+}
+#InputScreen{
+    margin: 0;
+    width: 100%;
+    height: 14vh;
+    padding: 20px;
+    border: none;
+    font-size: 300%;
+    text-align: end;
+    background-color: rgb(7, 7, 41);
+    color: white;
+    /* margin-bottom: 9%; */
+}
+#ButtonScreen{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+.btn{
+    padding: 10%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: white;
+    border: 1px solid lightsteelblue;
+    background-color: rgb(7, 7, 41);
+    transition: all 0.3s ease;
+    border-radius: 10%;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+}
+.btn:active{
+    /* scale: 1.1; */
+    /* font-size: 1.8rem; */
+    /* color: yellow; */
+    /* border: 1px solid red; */
+    border: 1px solid rgb(7, 7, 41);
+
+    
+}
+
+
